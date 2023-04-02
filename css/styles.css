@@ -1,0 +1,921 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+a {
+        margin: 0;
+        padding: 0;
+}
+
+img {
+        display: block;
+        width: 100%;
+        height: auto;
+}
+
+body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        color: #2E2F42;
+        background-color: #FFFFFF;
+}
+
+:root {
+        --text-color: #434455;
+        --hover-color-mail-tel-btn: #404BBF;
+        --color-body: #2E2F42;
+        --color-border-btn-footlogo: #E7E9FC;
+        --color-hero-and-background: #FFFFFF;
+        --color-background-team-btn: #F4F4FD;
+        --color-link-and-btn: #4D5AE5;
+        --main-indent: 120px 0;
+        --icon-background: #4D5AE5;
+        --color-link-customers: #8E8F99;
+        --color-background: #FFFFFF;
+        --color-background-footer: #31D0AA;
+        --color-modal-background: #FCFCFC;
+
+}
+
+.container {
+        max-width: 1158px;
+        margin: 0 auto;
+        padding: 0 15px;
+}
+
+.section{
+        padding: 120px 0;
+}
+.list {
+        list-style: none;
+}
+
+.link {
+        text-decoration: none;
+}
+
+.open {
+        color: var(--color-link-and-btn);
+}
+
+
+
+.navigation {
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+}
+
+.logo {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.33;
+        align-items: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+}
+
+.heading {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+}
+
+.text {
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+}
+
+.btn {
+        font-family: inherit;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: var(--color-link-and-btn);
+        background: var(--color-background-team-btn);
+        border: 1px solid var(--color-link-and-btn);
+        border-radius: 4px;
+        cursor: pointer;
+}
+
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
+
+
+/* Шапка */
+
+.header {}
+
+.header-style {
+        border-bottom: 1px solid var(--color-border-btn-footlogo);
+}
+
+.header-blok {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        padding: 24px 0;
+}
+
+.header-navigation {
+        display: flex;
+}
+
+.header-logo {
+        color: var(--color-body);
+}
+
+.header-logo span {
+        color: var(--color-link-and-btn);
+}
+
+.header-list {
+        max-width: 261px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-left: 76px;
+}
+
+
+.header-item {
+
+}
+
+.header-link-open{
+        position: relative;
+} 
+
+.header-link-open.active::after{
+        content: "";
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        left: 0px;
+        bottom: -27px;
+        background-color: var(--hover-color-mail-tel-btn);
+        border-radius: 2px;
+}
+
+
+.header-link {
+        color: var(--color-body);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.header-link:hover,
+.header-link:focus {
+        color: var(--color-link-and-btn)
+}
+
+
+.header-address {
+        font-style: normal;
+}
+
+.header-address-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+}
+
+.header-address-item {}
+
+.header-address-mail {
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--text-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-address-mail:hover,
+.header-address-mail:focus {
+        color: var(--hover-color-mail-tel-btn);
+}
+
+.header-address-tel {
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--text-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-address-tel:hover,
+.header-address-tel:focus {
+        color: var(--hover-color-mail-tel-btn);
+}
+
+/* /Шапка */
+
+/* Герой */
+
+.hero {
+        max-width: 1440px;
+        margin: 0 auto;
+        background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: var(--color-body);
+        padding: 188px 0;
+}
+
+.hero-title {
+        max-width: 496px;
+        margin: 0 auto;
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--color-hero-and-background);
+        margin-bottom: 48px;
+
+}
+
+.hero-btn {
+        display: block;
+        margin: 0 auto;
+        letter-spacing: 0.04em;
+        color: var(--color-hero-and-background);
+        background: var(--color-link-and-btn);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 16px 32px;
+        min-width: 169px;
+        min-height: 56px;
+        transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+        background: var(--hover-color-mail-tel-btn);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+}
+
+/* /Герой */
+
+
+/* Категорії */
+
+.categoris {}
+
+.categoris-title {}
+
+.categoris-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+}
+
+.categoris-item { 
+        max-width: 264px;
+        max-height: 224px;
+        flex-basis: calc((100% - 72px) / 4);
+}
+
+.categoris-pictures-blok{
+        display: flex;
+        justify-content: center;
+        padding: 24px 10px;  
+        background: var(--color-background-team-btn);
+        border-radius: 4px;
+} 
+
+
+.categoris-pictures-icon{
+}
+
+.categoris-heading {
+        color: var(--text-color);
+        margin: 8px 0;
+}
+
+
+.categoris-text {
+        color: var(--text-color);
+}
+
+/* /Категорії */
+
+/* Продукт */
+
+.product {
+        padding-top: 0;
+}
+
+.product-title {
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+}
+
+.product-list {
+        margin-top: 72px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+}
+
+.product-item {
+        flex-basis: calc((100% - 48px) / 3);
+}
+
+
+
+/* /Продукт */
+
+/* Команда */
+
+.team {
+        background: var(--color-background-team-btn);
+
+}
+
+.team-title {
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+}
+
+.team-list {
+        margin-top: 72px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+}
+
+.team-item {
+        min-width: 264px;
+        flex-basis: calc((100% - 72px) / 4);
+        background: var(--color-hero-and-background);
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
+}
+
+.team-social-list {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        padding-bottom: 32px;
+}
+
+
+.team-social-item {
+        width: 40px;
+        height: 40px;
+}
+
+.team-social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        color: var(--color-background-team-btn);
+        background-color: var(--icon-background);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-social-link:hover{
+       background-color: var(--hover-color-mail-tel-btn);
+}
+
+.team-social-icon {
+        fill:currentColor;
+}
+
+
+
+.team-container {
+        padding: 32px 16px;
+        padding-bottom: 0;
+
+}
+
+
+
+.team-heading {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.02em;
+        margin-bottom: 8px;
+
+}
+
+.team-text {
+        text-align: center;
+        color: var(--text-color);
+        margin-bottom: 8px;
+}
+
+
+/* /Команда */
+
+/*  */
+
+.customers {
+        padding: 130px 0 120px;
+}
+
+
+.customers-title {
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        margin-bottom: 72px;
+}
+
+.customers-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+
+}
+
+.customers-item {
+}
+
+.customers-link{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-link-customers);
+        border-radius: 4px;
+        border: 1px solid var(--color-link-customers);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.customers-link:is(:hover, :focus){
+        color: var(--hover-color-mail-tel-btn);
+        border-color: var(--hover-color-mail-tel-btn);
+}
+        
+.customers-icons{
+        width: 104px;
+        height: 56px;
+        margin: 16px 32px;
+        fill: currentColor;
+}
+
+.customers-icons:is(:hover, :focus){
+        fill: currentColor;
+}
+
+
+/* / */
+
+/* Кнопки */
+
+.button {}
+
+.button-title {}
+
+.button-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 24px;
+        margin-bottom: 72px;
+}
+
+.button-item {
+        display: block;
+}
+
+
+.button-item-btn {
+        font-family: inherit;
+        padding: 12px 24px;
+        border: 1px solid var(--color-border-btn-footlogo);
+        border-radius: 4px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);     
+}
+
+.button-item-btn:hover,
+.button-item-btn:focus {
+        color: var(--color-hero-and-background);
+        background: var(--hover-color-mail-tel-btn);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 2px 1px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+}
+
+/* /Кнопки */
+
+
+.application-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 48px 24px;
+}
+
+.application-item {
+        flex-basis: calc((100% - 48px) / 3);
+
+}
+
+
+.application-item:is(:hover, :focus) .application-headline{
+        transform: translateY(0);
+}
+
+
+.application-box{
+        position: relative;
+        overflow: hidden;
+}
+
+.application-headline{
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--color-background-team-btn);
+        padding: 40px 32px 20px;
+        background: var(--color-link-and-btn);
+        position: absolute;
+        overflow: auto;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translateY(100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
+.application-item:hover{
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.application-blok {
+        padding: 32px 16px;
+        background: var(--color-background);
+        border: 1px solid var(--color-border-btn-footlogo);
+        border-top: none;
+}
+
+
+.application-heading {}
+
+.application-text {
+        color: var(--text-color);
+
+}
+
+/* Футер */
+
+
+
+.footer {
+        background: var(--color-body);
+        padding: 100px 0;
+
+}
+.footer-div{
+        display: flex;
+}
+
+.footer-container {
+}
+
+.footer-logo {
+        color: var(--color-background-team-btn);
+}
+
+.footer-logo span {
+        color: var(--color-link-and-btn);
+}
+
+.footer-text {
+        margin-top: 16px;
+        max-width: 264px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--color-border-btn-footlogo);
+}
+
+.footer-social {
+        margin-left: 120px;
+
+}
+
+.footer-social-title {
+        color: var(--color-hero-and-background);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        margin-bottom: 16px;
+}
+
+.footer-social-list {
+        display: flex;
+        gap: 24px;
+}
+
+.footer-social-item {
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-item:is(:hover, :focus){
+        background: var(--color-background-footer);
+}
+
+
+.footer-social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: var(--color-background-team-btn);
+        
+}
+
+.footer-social-icon {
+        fill: currentColor;
+}
+
+.footer-subscribe{
+        margin-left: 80px;
+}
+
+.footer-subscribe-title{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--color-hero-and-background);  
+        margin-bottom: 16px;    
+}
+
+.footer-form{
+        display: flex;
+}
+
+.footer-input{
+        border: 1px solid #FFFFFF;
+        outline: none;
+        color: var(--color-background);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background: var(--color-body);
+        margin-right: 24px;
+        padding: 8px 16px;
+}
+
+.footer-input::placeholder{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 2.0;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.04em;
+        color: var(--color-background);
+}
+
+.subscribe-icon-blok{
+        position: relative;
+}
+
+.footer-subscribe-btn{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: var(--color-background);
+        padding: 8px 64px 8px 24px;
+        background: var(--color-link-and-btn);
+        border-radius: 4px;
+}
+
+.footer-subscribe-icon{
+        position: absolute;
+        top: 50%;
+        left: 117px;
+        transform: translateY(-50%);
+}
+
+
+
+
+/* /Футер */
+
+.backdrop{
+        width: 100%;
+        height: 100%;
+        background: rgba(46, 47, 66, 0.4);
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal{
+        max-width: 408px;
+        width: 100%;
+        min-height: 576px;
+        padding: 24px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        transition: transform 500ms;
+        background: var(--color-modal-background);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+}
+
+
+.modal-close{
+        width: 24px;
+        height: 24px;
+        display: block;
+        margin-left: auto;
+        background: var(--color-border-btn-footlogo);
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-close-x{
+        width: 100%;
+        height: 100%;
+}
+
+.backdrop.is-hidden .modal{
+        transform: translate(-50%, -50%) scale(0.2);
+}  
+
+
+.is-hidden{
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;      
+}
+
+.modal-title{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--color-body);
+        margin-top: 24px;
+        margin-bottom: 16px;      
+}
+
+.modal-input{
+        width: 100%;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+        padding: 11px 38px;
+        outline: transparent;
+}
+.modal-input:focus{
+        border: 1px solid var(--color-link-and-btn);
+        border-radius: 4px;
+}
+
+.modal-input:focus + .modal-icon{
+        fill: var(--hover-color-mail-tel-btn)  
+}
+
+.form-label{
+        display: block;
+        margin-bottom: 8px;
+}
+
+.form-label-text{
+        display: block;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: var(--color-link-customers);
+        margin-bottom: 4px;
+}
+
+.modal-textarea{
+        display: block;
+        width: 100%;
+        min-height: 120px;
+        background: var(--color-modal-background);
+        border-radius: 4px;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        padding: 8px 16px;
+        margin-bottom: 16px;
+        outline: transparent;
+        resize: none;
+}
+
+.modal-textarea:focus{
+        border: 1px solid var(--color-link-and-btn);
+}
+
+
+.modal-icon{
+        position: absolute;
+        left: 19px;
+        top: 50%;
+        transform: translateY(-50%);
+}
+
+.input-blok{
+        display: block;
+        position: relative;
+}
+
+.input-checkbox:checked + .lable-checkbox::before{
+        background-color: var(--hover-color-mail-tel-btn);
+        background-image: url(../images/Vector8.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
+.lable-checkbox{
+        display: flex;
+        width: 100%;
+        height: 16px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        color: var(--color-link-customers);
+}
+
+.lable-checkbox::before{
+        content: "";
+        width: 16px;
+        height: 16px;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 2px;
+        margin-right: 8px;
+}
+
+.checkbox-blok{
+        position: relative;
+}
+
+.form-btn{
+        display: block;
+        margin: 0 auto;
+        letter-spacing: 0.04em;
+        color: var(--color-hero-and-background);
+        background: var(--color-link-and-btn);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 16px 32px;
+        min-width: 169px;
+        min-height: 56px;
+        margin-top: 24px;
+        transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
